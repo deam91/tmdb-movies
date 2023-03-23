@@ -7,7 +7,8 @@ class RiveLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: RiveAnimation.asset('assets/rives/square_loading.riv'),
+      // TODO Remove gray background in the Rive editor
+      child: RiveAnimation.asset('assets/rives/loading.riv'),
     );
   }
 }

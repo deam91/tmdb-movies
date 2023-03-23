@@ -30,7 +30,7 @@ void main() {
 
     // console logging
     Loggy.initLoggy(
-      logPrinter: const PrettyPrinter(),
+      logPrinter: const PrettyPrinter(showColors: true),
       logOptions: const LogOptions(
         LogLevel.all,
       ),

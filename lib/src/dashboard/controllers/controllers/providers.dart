@@ -16,8 +16,9 @@ part 'providers.g.dart';
 MoviesRepository moviesRepository(MoviesRepositoryRef ref) {
   final isOnline = ref.watch(networkConnectivityProvider);
   final dio = ref.read(dioProvider);
-  final baseUrl = dotenv.get('BASE_URL');
-  final apiKey = dotenv.get('API_KEY');
+  final baseUrl = dotenv.env['BASE_URL'] as String;
+  final apiKey = dotenv.env['API_KEY'] as String;
+  print(baseUrl);
   final restClient = TMDBRestClient(dio, baseUrl: baseUrl);
   return MoviesRepository(
     restClient: restClient,
