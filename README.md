@@ -3,6 +3,7 @@
 </h1>
 
 <p align="center">
+  <img src="https://user-images.githubusercontent.com/11580629/227382604-64611352-47fc-47b2-9708-94dfb3e2f864.png" width="250"/>
 </p>
 
 <p align="center">
@@ -15,7 +16,7 @@
 
 - [Install Flutter](https://docs.flutter.dev/get-started/install)
 - Run `flutter doctor` to check you have everything installed
-- Run `git clone https://github.com/deam91/tmdb-movies.git` to clone
+- Run `git clone https://github.com/deam91/tmdb-movies.git` to clone this repository
 - Run `flutter pub get` to install all the packages
 - Run `flutter pub run build_runner build` for code generation
 - Run `flutter run` to see the app
