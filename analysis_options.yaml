@@ -25,5 +25,19 @@ linter:
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 
+analyzer:
+  plugins:
+    - custom_lint
+
+custom_lint:
+  rules:
+    - missing_provider_scope
+    - provider_dependencies
+    - avoid_manual_providers_as_generated_provider_depenency
+    - provider_parameters
+    - unsupported_provider_value
+    - stateless_ref
+    - generator_class_extends
+
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
